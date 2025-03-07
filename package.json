@@ -7,8 +7,8 @@
     "process": "^0.11.10"
   },
   "scripts": {
-    "start": "npx parcel i.html",
-    "build": "npx parcel build i.html",
+    "start": "parcel i.html",
+    "build": "parcel build i.html",
     "test": "jest"
   },
   "author": "Tarun Behera",
