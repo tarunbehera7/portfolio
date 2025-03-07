@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio",
+  "devDependencies": {
+    "parcel": "^2.8.3",
+    "process": "^0.11.10"
+  },
+  "scripts": {
+    "start": "parcel i.html",
+    "build": "parcel build i.html",
+    "test": "jest"
+  },
+  "author": "Tarun Behera",
+  "license": "ISC",
+  "dependencies": {
+    "@parcel/transformer-raw": "^2.8.3",
+    "emailjs-com": "^3.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-modal": "^3.16.3",
+    "react-typed": "^2.0.12",
+    "sonner": "^2.0.1"
+  }
+}

@@ -1,0 +1,182 @@
+/* .skills-section {
+  text-align: center;
+  padding: 50px;
+  position: relative;
+}
+
+.section-title {
+  font-size: 3.7rem;
+  margin-bottom: 50px;
+}
+
+.skills-container {
+  max-width: 600px;
+  margin: auto;
+  padding-top: 15px;
+}
+
+.skill {
+  margin-bottom: 15px;
+}
+
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  color: #D1D5DB;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #007bff;
+  transition: width 1s ease-in-out;
+}
+
+.galaxy-line {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  height: 2px;
+  background: linear-gradient(to right, rgba(47, 115, 185, 0), #2f73b9, rgba(47, 115, 185, 0));
+  animation: glow 3s ease-in-out infinite;
+  z-index: 5;
+}
+
+@keyframes glow {
+  0% { box-shadow: 0 0 10px rgba(47, 115, 185, 0.8); }
+  50% { box-shadow: 0 0 20px rgba(47, 115, 185, 1); }
+  100% { box-shadow: 0 0 10px rgba(47, 115, 185, 0.8); }
+}
+
+.particle {
+  position: absolute;
+  top: 100px;
+  width: 6px;
+  height: 6px;
+  background: rgba(160, 214, 238, 1);
+  border-radius: 50%;
+  animation: particleFlow 3s linear infinite;
+  z-index: 6;
+  opacity: 1;
+}
+
+@keyframes flow {
+  0% { background-position: 0 0; }
+  100% { background-position: 0 100px; }
+}
+
+@keyframes glow {
+  0% { box-shadow: 0 0 10px rgba(47, 115, 185, 0.8); }
+  50% { box-shadow: 0 0 20px rgba(47, 115, 185, 1); }
+  100% { box-shadow: 0 0 10px rgba(47, 115, 185, 0.8); }
+}
+
+.particle-1 { left: 41%; animation-delay: 0s; }
+.particle-2 { left: 46%; ; animation-delay: 1s; }
+.particle-3 { left: 51%; animation-delay: 2s; }
+.particle-4 { left: 56%; animation-delay: 3s; }
+
+
+@keyframes particleFlow {
+  0% { transform: translateX(0); opacity: 1; }
+  100% { transform: translateX(30px); opacity: 0; }
+}
+
+@media (max-width: 768px) {
+  .galaxy-line {
+    top: 140px; 
+    width: 200px;
+  }
+  .particle {
+    width: 4px; 
+    height: 4px;
+  }
+  
+  .particle-1 { left: 29%; animation-delay: 0s; }
+  .particle-2 { left: 40%;; animation-delay: 1s; }
+  .particle-3 { left: 52%; animation-delay: 2s; }
+  .particle-4 { left: 64%; animation-delay: 3s; }
+} */
+
+
+
+
+
+
+
+
+
+
+
+.skills-section {
+  text-align: center;
+  padding: 50px;
+  position: relative;
+}
+
+/* Use CSS Grid instead of Flex to easily control columns */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+  padding-top: 100px;
+  margin: 0 auto;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.skill-name {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 0.5rem;
+  letter-spacing: 2px;
+}
+
+/* Make the icons bigger */
+.skill-icon {
+  width: 100px;
+  height: auto;
+  transition: transform 0.2s ease-in-out;
+}
+
+.skill-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Hide or style the skill name if needed
+.skill-name {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #D1D5DB;
+}
+*/
+
+/* Responsive: 3 columns for screens <= 768px */
+@media (max-width: 768px) {
+  .skills-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Responsive: 2 columns for screens <= 480px */
+@media (max-width: 480px) {
+  .skills-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

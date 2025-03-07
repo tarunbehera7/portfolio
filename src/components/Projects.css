@@ -1,0 +1,129 @@
+/* ===== Projects Section Wrapper ===== */
+.projects-section {
+  text-align: center;
+  padding: 50px 20px;
+  /* margin: 0; */
+}
+
+.section-subtitle {
+  font-family: "Titillium Web", serif;
+  font-size: 3.7rem;
+  font-weight: 700;
+  color: #2f73b9;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+
+.project-card {
+  background: linear-gradient(135deg, #f5f5f5, #e0e0e0);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px 20px;
+  text-align: center;
+  width: 300px;
+  height: 270px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow:  0 4px 10px rgba(160, 214, 238, 0.7),  
+  0 7px 13px -3px rgba(160, 214, 238, 0.5), 
+  0 -3px 0px inset rgba(160, 214, 238, 0.4);;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 8px, 
+              rgba(0, 0, 0, 0.3) 0px 10px 20px -3px, 
+              rgba(0, 0, 0, 0.2) 0px -4px 0px inset;
+}
+
+
+.project-icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.project-card h3 {
+  margin: 0 0 15px;
+  font-size: 1.8rem;
+  color: #1c3246;
+  font-weight: 700;
+}
+
+
+.project-card p {
+  margin: 0;
+  color: #35373a;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+@media (max-width: 480px) {
+  .project-card {
+    width: 100%; 
+    max-width: 280px; /* Make sure they don't become too large */
+    padding: 15px;
+  }
+
+  .project-card h3 {
+    font-size: 1.3rem; 
+  }
+
+  .project-card p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-container {
+    flex-direction: column;
+    align-items: center;
+    /* gap: 40px; */
+  }
+  /* .projects-section {
+    padding: 20px 10px;
+  } */
+
+  .project-card {
+    width: 100%;
+    max-width: 280px; 
+    height: auto;
+    padding: 15px;
+  }
+
+  .project-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .project-card h3 {
+    font-size: 1.5rem;
+  }
+
+  .project-card p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .projects {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .projects .card {
+    width: 30%; 
+  }
+}

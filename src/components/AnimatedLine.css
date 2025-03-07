@@ -1,0 +1,15 @@
+.svg-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3000px; /* Matches the SVG height to cover the entire scroll distance */
+    z-index: -1; /* Places the line behind other content */
+    pointer-events: none; /* Prevents interaction with the line */
+  }
+  
+  svg {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }

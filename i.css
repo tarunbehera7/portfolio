@@ -1,0 +1,369 @@
+body {
+  /* background: #131820; */
+  background: #202930;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  cursor: none;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.circle {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 99999999; /* Keep it on top */
+  transition: transform 0.05s linear;
+  cursor: none;
+}
+
+.montserrat {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  scroll-behavior: unset;
+}
+/* Loader container */
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #202930; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999; 
+}
+
+
+.spinner {
+  width: 80px;
+  height: 80px;
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+.scroll-progress-container {
+  position: fixed;
+  top: 320px;
+  right: 10px;
+  width: 5px;
+  height: 10vh;
+  background: rgba(255, 255, 255, 0.1);
+  z-index: 9999;
+}
+
+.scroll-progress-bar {
+  width: 100%;
+  background: #2f73b9;
+  transition: height 0.2s ease-in-out;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Titillium Web", serif;
+  /* font-weight: 900; */
+}
+
+.logo {
+  display: block;
+  width: 60px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.nav-items {
+  padding: 0px 20px;
+}
+
+.nav-items>ul {
+  margin: 0;
+  font-size: 24px;
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-items ul li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  position: relative;
+}
+
+.nav-items ul li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #2f73b9;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  font-weight: 700;
+  cursor: none;
+}
+
+.nav-items ul li a i {
+  margin-right: 12px;
+  vertical-align: middle;
+  font-size: 1.4em;
+}
+
+.nav-items ul li a:hover {
+  color: #a0d6ee;
+}
+
+.nav-items ul li i {
+  font-size: 20px;
+}
+
+#main-content {
+  height: 100vh;
+  padding: 10px;
+}
+
+/* #projects {
+  padding: 50px;
+} */
+
+/* #contacts {
+  padding: 50px;
+} */
+
+/* Ensure the wrapper is positioned relative 
+so,absolute video is positioned relative to it */
+.content-section {
+  position: relative;
+  z-index: 0;
+
+}
+
+.video-bg {
+  position: absolute;
+  top: 12%;
+  /* If you want the video starting below the header, else keep 0 */
+  left: 0;
+  width: 100%;
+  height: 88%;
+  overflow: hidden;
+  z-index: -1;
+  /* Sends it behind the foreground content */
+}
+
+
+.video-bg video {
+  position: absolute;
+  top: 70px;
+  right: 0;
+  width: 50%;
+  height: 90%;
+  object-fit: cover;
+  object-position: 80% center;
+}
+
+.hamburger {
+  position: fixed;
+  top: 4px;
+  right: 30px;
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #7b7b7b;
+  cursor: none;
+}
+
+/* Overlay covers the entire screen */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 999;
+  /* just below the menu’s z-index */
+  display: none;
+  /* hidden by default */
+}
+
+/* Show overlay when active */
+.overlay.active {
+  padding: 20px;
+  display: block;
+}
+
+/* Prevent body from scrolling when menu is open */
+.no-scroll {
+  overflow: hidden;
+  position: fixed;
+  /* If you have a tall page, also consider: */
+  /* height: 100%; */
+}
+
+
+@media (max-width: 379px) {
+  #projects {
+    padding-bottom: 500px;
+  }
+
+  #contacts {
+    margin-top: 50px;
+    padding-top: 30px;
+  }
+
+  .contact {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .heading {
+    font-size: 1.8rem;
+  }
+
+  .input-box {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .input-box input {
+    width: 100%;
+  }
+
+  textarea {
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  #main-content {
+    height: 100vh;
+    padding: 20px;
+  }
+  .logo {
+    display: block;
+    width: 50px;
+    margin-top: 7px;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+
+  .logo:hover {
+    transform: scale(1.05);
+  }
+
+  .nav-items {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    color: rgb(54, 69, 79);
+    filter: brightness(1.5);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    z-index: 102;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 10px;
+  }
+
+  .hamburger:hover {
+    background: rgba(160, 214, 238, 1);
+    filter: brightness(1);
+  }
+
+  .video-bg video {
+    top: 210px;
+    width: 100%;
+    height: 70%;
+    object-position: center center;
+  }
+
+  /* Show menu when toggled */
+  .nav-items.open {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: auto;
+    height: 100vh;
+    width: 250px;
+    align-items: flex-end;
+    background: rgba(255, 255, 255, 1);
+    text-align: center;
+    z-index: 10;
+    overflow: hidden;
+  }
+
+  .hamburger.active {
+    color: #ff0000;
+  }
+
+  .nav-items.open+#main-content {
+    padding-top: 60px;
+  }
+
+  .nav-items ul {
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+    /* overflow: hidden; */
+  }
+
+  .nav-items>ul>li {
+    margin: 10px 0;
+    padding: 10px 20px;
+    top: 100px;
+    left: 40px;
+  }
+
+  .nav-items ul li a {
+    color: #2f73b9;
+    font-size: 22px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+
+  .nav-items ul li a i {
+    margin-right: 10px;
+    font-size: 1.2em;
+  }
+
+  #main-content {
+    height: 100vh;
+    padding: 10px;
+  }
+}
