@@ -1,22 +1,17 @@
 {
     "version": 2,
+    "public": true,
     "builds": [
       {
-        "src": "dist/*.html",
+        "src": "index.html",
         "use": "@vercel/static"
       }
     ],
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "/dist/$1",
-        "headers": {
-          "Cache-Control": "public, max-age=0, must-revalidate"
-        }
-      },
-      {
-        "src": "/(.*)",
-        "dest": "/dist/index.html"
+        "dest": "/index.html"
       }
     ]
   }
+  
