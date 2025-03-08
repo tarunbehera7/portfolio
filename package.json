@@ -9,8 +9,7 @@
   "scripts": {
     "start": "npx parcel index.html",
     "build": "npx parcel build index.html",
-    "test": "jest",
-    "postinstall": "chmod +x node_modules/.bin/parcel"
+    "test": "jest"
   },
   "author": "Tarun Behera",
   "license": "ISC",
