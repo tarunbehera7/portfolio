@@ -1,12 +1,21 @@
 {
-    "version": 2,
-    "public": true,
-    "cleanUrls": true,
-    "rewrites": [
-      {
-        "source": "/(.*)",
-        "destination": "/dist/$1"
+  "version": 2,
+  "public": true,
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/dist/$1"
+    }
+  ],
+  "builds": [
+    {
+      "src": "src/App.js",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist",
+        "buildCommand": "chmod +x node_modules/.bin/parcel && npm run build"
       }
-    ]
-  }
-  
+    }
+  ]
+}
