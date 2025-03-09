@@ -100,7 +100,7 @@ const About = () => {
               </li>
               <li>
                 <span className="label"><strong>💠Website:</strong></span> 
-                <span className="value" style={{ color: "#2f73b9" }}>tb7dev.vercel.app</span>
+                <span className="value" style={{ color: "#2f73b9", cursor:"pointer"}}>tb7dev.vercel.app</span>
               </li>
               <li>
                 <span className="label"><strong>💠Degree:</strong></span> 
