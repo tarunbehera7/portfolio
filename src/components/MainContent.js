@@ -45,8 +45,8 @@ const MainContent = () => {
         </a>
       </div>
       <div className="social-media">
-        <a href="https://github.com/tarunbehera7" className="social-icon"><i className='bx bxl-github' ></i></a>
-        <a href="https://www.linkedin.com/in/tarun-behera7/" className="social-icon"><i className='bx bxl-linkedin' ></i></a>
+        <a href="#" className="social-icon"><i className='bx bxl-github' ></i></a>
+        <a href="#" className="social-icon"><i className='bx bxl-linkedin' ></i></a>
         <a href="#" className="social-icon"><i className='bx bxl-instagram'></i></a>
         <a href="#" className="social-icon"><i className='bx bxl-twitter' ></i></a>
       </div>

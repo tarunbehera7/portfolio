@@ -96,11 +96,11 @@ const About = () => {
               <li>
                 {/* Adjust age as appropriate */}
                 <span className="label"><strong>💠Age:</strong></span> 
-                <span className="value">23</span>
+                <span className="value">24</span>
               </li>
               <li>
                 <span className="label"><strong>💠Website:</strong></span> 
-                <span className="value">yourwebsite.com</span>
+                <span className="value">tb7dev.vercel.app</span>
               </li>
               <li>
                 <span className="label"><strong>💠Degree:</strong></span> 

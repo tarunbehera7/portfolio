@@ -5,8 +5,8 @@ const Footer = () => {
   return (
     <footer className="footer" id="footer">
       <div className="social-media">
-      <a href="https://github.com/tarunbehera7" className="social-icon"><i class='bx bxl-github' ></i></a>
-        <a href="https://www.linkedin.com/in/tarun-behera7/" className="social-icon"><i class='bx bxl-linkedin' ></i></a>
+        <a href="#" className="social-icon"><i class='bx bxl-github' ></i></a>
+        <a href="" className="social-icon"><i class='bx bxl-linkedin' ></i></a>
         <a href="#" className="social-icon"><i class='bx bxl-instagram'></i></a>
         <a href="#" className="social-icon"><i class='bx bxl-twitter' ></i></a>
       </div>
@@ -15,7 +15,7 @@ const Footer = () => {
         &copy; Copyright <strong>TARUN</strong>.  All Rights Reserved
       </p>
       <p className="designed-by">
-        Designed by <a href="Website-Link" target="_blank" rel="noopener noreferrer">Website-Link</a>
+        Designed by <a href="https://tb7dev.vercel.app/" target="_blank" rel="noopener noreferrer">Portfolio</a>
       </p>
 
       <a href="#" className="scroll-up">
