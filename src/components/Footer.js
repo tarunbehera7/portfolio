@@ -15,7 +15,7 @@ const Footer = () => {
         &copy; Copyright <strong>TARUN</strong>.  All Rights Reserved
       </p>
       <p className="designed-by">
-        Designed by <a href="https://tb7dev.vercel.app/" target="_blank" rel="noopener noreferrer">Portfolio</a>
+        Designed by <a href="https://tb7dev.vercel.app/" target="_blank" rel="noopener noreferrer">https://tb7dev.vercel.app/</a>
       </p>
 
       <a href="#" className="scroll-up">
